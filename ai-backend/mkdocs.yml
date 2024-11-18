@@ -1,0 +1,3 @@
+site_name: ai-backend-docs
+theme:
+  name: dracula
