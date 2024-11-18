@@ -37,6 +37,7 @@ This project structure represents a multi-service application, organized into di
 ### NGINX documentation
 The NGINX reverse proxy is a key part of the architecture, acting as a traffic manager that directs incoming requests to the appropriate services based on the URL paths. It ensures secure communication, handles WebSocket connections for real-time features, and redirects HTTP traffic to HTTPS for enhanced security.
 
+- [**NGINX code**](./nginx/nginxCode.md)
 - [**NGINX configuration**](./nginx/nginxConf.md)
 - [**NGINX proxy parameters**](./nginx/proxyParams.md)
 - [**NGINX proxy configuration**](./nginx/proxyConf.md)
