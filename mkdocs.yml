@@ -1,0 +1,5 @@
+site_name: ai-backend-docs
+theme:
+  name: dracula
+
+docs_dir: ai-backend
