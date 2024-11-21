@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Docker Compose Setup for AudioStreamer Project - ai-backend-docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">ai-backend-docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    General overview of the workings
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#howitworks-collapse" aria-expanded="false">
+                    howItWorks
+                </a>
+                <div class="collapse" id="howitworks-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../apigateway/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API gateway
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../code/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API Interaction Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Docker Compose Setup for AudioStreamer Project
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../streaming/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tts/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tts
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#nginx-collapse" aria-expanded="false">
+                    Nginx
+                </a>
+                <div class="collapse" id="nginx-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../nginx/nginxCode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Code for the nginx setup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../nginx/nginxConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../nginx/proxyConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX SSL and Proxy Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../nginx/proxyParams/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proxy Header Configuration Explanation
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../code/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../streaming/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="docker-compose-setup-for-audiostreamer-project">Docker Compose Setup for AudioStreamer Project</h1>
+<p>This document describes the Docker Compose configuration for the AudioStreamer project, which consists of multiple services that work together to provide an audio streaming solution with GPU support.</p>
+<h2 id="services">Services</h2>
+<h3 id="1-ollama-container">1. Ollama Container</h3>
+<ul>
+<li><strong>Container Name</strong>: <code>ollama</code></li>
+<li><strong>Image</strong>: <code>ollama/ollama</code></li>
+<li><strong>Volumes</strong>:</li>
+<li><code>./data/ollama:/root/.ollama</code>: Mounts the local <code>data/ollama</code> directory to the container's <code>.ollama</code> directory.</li>
+<li><code>./custom:/custom</code>: Mounts the local <code>custom</code> directory to the container.</li>
+<li><strong>Network</strong>: Connected to <code>apinetwork</code>.</li>
+<li><strong>Environment Variables</strong>:</li>
+<li><code>OLLAMA_ORIGINS</code>: Set to <code>http://host.docker.internal</code>.</li>
+<li><strong>Deploy Configuration</strong>:</li>
+<li><strong>Resources</strong>:<ul>
+<li><strong>Reservations</strong>:</li>
+<li><strong>Devices</strong>: <ul>
+<li><strong>Driver</strong>: <code>nvidia</code></li>
+<li><strong>Count</strong>: <code>all</code></li>
+<li><strong>Capabilities</strong>: <code>gpu</code> (Enables GPU support for the container)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Command</strong>: Runs <code>serve</code> and then <code>list</code>.</li>
+</ul>
+<h3 id="2-api-gateway">2. API Gateway</h3>
+<ul>
+<li><strong>Container Name</strong>: <code>apigateway</code></li>
+<li><strong>Build Context</strong>: <code>./api</code></li>
+<li><strong>Ports</strong>: Exposes the API on <code>${API_PORT}</code>.</li>
+<li><strong>Volumes</strong>:</li>
+<li><code>./api:/usr/src/app</code>: Mounts the local <code>api</code> directory to the container's application directory.</li>
+<li><strong>Depends On</strong>:</li>
+<li><code>ollama-container</code>: Waits for this service to be ready.</li>
+<li><strong>Network</strong>: Connected to <code>apinetwork</code>.</li>
+<li><strong>Deploy Configuration</strong>:</li>
+<li><strong>Resources</strong>:<ul>
+<li><strong>Reservations</strong>:</li>
+<li><strong>Devices</strong>: <ul>
+<li><strong>Driver</strong>: <code>nvidia</code></li>
+<li><strong>Count</strong>: <code>all</code></li>
+<li><strong>Capabilities</strong>: <code>gpu</code> (Enables GPU support for the container)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Health Check</strong>:</li>
+<li><strong>Test</strong>: Uses <code>curl</code> to check if the service is responsive at <code>http://ollama:11434</code>.</li>
+<li><strong>Interval</strong>: 1 minute 30 seconds.</li>
+<li><strong>Timeout</strong>: 30 seconds.</li>
+<li><strong>Retries</strong>: 5 attempts.</li>
+<li><strong>Start Period</strong>: 30 seconds.</li>
+</ul>
+<h3 id="3-backend-code">3. Backend Code</h3>
+<ul>
+<li><strong>Container Name</strong>: <code>backend</code></li>
+<li><strong>Build Context</strong>: <code>./code</code></li>
+<li><strong>Ports</strong>: Exposes the backend on <code>${BACKEND_PORT}</code>.</li>
+<li><strong>Volumes</strong>:</li>
+<li><code>./code:/usr/src/app</code>: Mounts the local <code>code</code> directory to the container's application directory.</li>
+<li><strong>Depends On</strong>:</li>
+<li><code>apigateway</code>: Requires the API gateway to be healthy before starting.</li>
+<li><code>streaming</code>: Requires the streaming service to be healthy before starting.</li>
+<li><strong>Network</strong>: Connected to <code>apinetwork</code>.</li>
+<li><strong>Deploy Configuration</strong>:</li>
+<li><strong>Resources</strong>:<ul>
+<li><strong>Reservations</strong>:</li>
+<li><strong>Devices</strong>: <ul>
+<li><strong>Driver</strong>: <code>nvidia</code></li>
+<li><strong>Count</strong>: <code>all</code></li>
+<li><strong>Capabilities</strong>: <code>gpu</code> (Enables GPU support for the container)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-streaming-service">4. Streaming Service</h3>
+<ul>
+<li><strong>Container Name</strong>: <code>streaming</code></li>
+<li><strong>Build Context</strong>: <code>./streaming</code></li>
+<li><strong>Ports</strong>: Exposes the streaming service on <code>${STREAMING_PORT}</code>.</li>
+<li><strong>Volumes</strong>:</li>
+<li><code>./streaming:/usr/src/app</code>: Mounts the local <code>streaming</code> directory to the container's application directory.</li>
+<li><strong>Depends On</strong>:</li>
+<li><code>ollama-container</code>: Waits for this service to be ready.</li>
+<li><strong>Network</strong>: Connected to <code>apinetwork</code>.</li>
+<li><strong>Deploy Configuration</strong>:</li>
+<li><strong>Resources</strong>:<ul>
+<li><strong>Reservations</strong>:</li>
+<li><strong>Devices</strong>: <ul>
+<li><strong>Driver</strong>: <code>nvidia</code></li>
+<li><strong>Count</strong>: <code>all</code></li>
+<li><strong>Capabilities</strong>: <code>gpu</code> (Enables GPU support for the container)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Health Check</strong>:</li>
+<li><strong>Test</strong>: Uses <code>curl</code> to check if the service is responsive at <code>http://ollama:11434</code>.</li>
+<li><strong>Interval</strong>: 1 minute 30 seconds.</li>
+<li><strong>Timeout</strong>: 30 seconds.</li>
+<li><strong>Retries</strong>: 5 attempts.</li>
+<li><strong>Start Period</strong>: 30 seconds.</li>
+</ul>
+<h3 id="5-text-to-speech-tts-service">5. Text-to-Speech (TTS) Service</h3>
+<ul>
+<li><strong>Container Name</strong>: <code>tts</code></li>
+<li><strong>Build Context</strong>: <code>./tts</code></li>
+<li><strong>Ports</strong>: Exposes the TTS service on <code>${TEXT_TO_SPEECH}</code>.</li>
+<li><strong>Volumes</strong>:</li>
+<li><code>./tts:/usr/src/app</code>: Mounts the local <code>tts</code> directory to the container's application directory.</li>
+<li><strong>Network</strong>: Connected to <code>apinetwork</code>.</li>
+<li><strong>Deploy Configuration</strong>:</li>
+<li><strong>Resources</strong>:<ul>
+<li><strong>Reservations</strong>:</li>
+<li><strong>Devices</strong>: <ul>
+<li><strong>Driver</strong>: <code>nvidia</code></li>
+<li><strong>Count</strong>: <code>all</code></li>
+<li><strong>Capabilities</strong>: <code>gpu</code> (Enables GPU support for the container)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="networks">Networks</h2>
+<ul>
+<li><strong>apinetwork</strong>: </li>
+<li><strong>Driver</strong>: <code>bridge</code></li>
+</ul>
+<p>This setup provides a comprehensive architecture for an audio streaming application utilizing Docker containers with GPU acceleration for relevant services.</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

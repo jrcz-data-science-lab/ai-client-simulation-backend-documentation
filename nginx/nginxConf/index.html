@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>NGINX Configuration Explanation - ai-backend-docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">ai-backend-docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    General overview of the workings
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#howitworks-collapse" aria-expanded="false">
+                    howItWorks
+                </a>
+                <div class="collapse" id="howitworks-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/apigateway/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API gateway
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/code/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API Interaction Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/dockerCompose/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Docker Compose Setup for AudioStreamer Project
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/streaming/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/tts/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tts
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#nginx-collapse" aria-expanded="false">
+                    Nginx
+                </a>
+                <div class="collapse" id="nginx-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../nginxCode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Code for the nginx setup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../proxyConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX SSL and Proxy Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../proxyParams/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proxy Header Configuration Explanation
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../nginxCode/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../proxyConf/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="nginx-configuration-explanation">NGINX Configuration Explanation</h1>
+<p>This configuration file defines basic settings for an NGINX web server, including worker processes, event handling, and HTTP server settings. It listens on port 8222 and serves static files.</p>
+<hr />
+<h2 id="global-settings">Global Settings</h2>
+<h3 id="worker_processes-1"><code>worker_processes 1;</code></h3>
+<ul>
+<li><strong>Description</strong>: Specifies the number of worker processes NGINX should spawn to handle incoming requests. Here, it's set to <code>1</code>, meaning one worker process will handle all the connections.</li>
+</ul>
+<h3 id="events"><code>events {}</code></h3>
+<ul>
+<li><strong>Description</strong>: Defines how NGINX will handle incoming connections in an asynchronous, non-blocking manner.</li>
+</ul>
+<h4 id="worker_connections-1024"><code>worker_connections 1024;</code></h4>
+<ul>
+<li><strong>Description</strong>: Sets the maximum number of simultaneous connections that each worker process can handle. In this case, it's set to <code>1024</code>, meaning each worker can handle up to 1024 connections concurrently.</li>
+</ul>
+<hr />
+<h2 id="http-settings">HTTP Settings</h2>
+<p>The <code>http {}</code> block defines the behavior of NGINX when handling HTTP requests.</p>
+<h3 id="include-mimetypes"><code>include mime.types;</code></h3>
+<ul>
+<li><strong>Description</strong>: This line includes the <code>mime.types</code> file, which helps NGINX recognize file types based on file extensions. It determines the correct <code>Content-Type</code> header to serve for each file type.</li>
+</ul>
+<h3 id="include-sites-enabled"><code>include sites-enabled/*;</code></h3>
+<ul>
+<li><strong>Description</strong>: This includes any additional site-specific configurations stored in the <code>sites-enabled</code> directory. It allows for modular site configuration (like virtual hosts).</li>
+</ul>
+<h3 id="server_names_hash_bucket_size-64"><code>server_names_hash_bucket_size 64;</code></h3>
+<ul>
+<li><strong>Description</strong>: Sets the hash bucket size for server names. This is necessary when dealing with long or numerous domain names. A value of <code>64</code> is a common setting, which ensures optimal performance when hashing server names.</li>
+</ul>
+<h3 id="default_type-applicationoctet-stream"><code>default_type application/octet-stream;</code></h3>
+<ul>
+<li><strong>Description</strong>: Defines the default MIME type when NGINX can't determine the file type. Here, it defaults to <code>application/octet-stream</code>, which is a generic binary stream type.</li>
+</ul>
+<h3 id="sendfile-on"><code>sendfile on;</code></h3>
+<ul>
+<li><strong>Description</strong>: Enables the <code>sendfile()</code> system call for sending files. This improves performance when serving large files, as it avoids copying the file data between user space and kernel space.</li>
+</ul>
+<h3 id="keepalive_timeout-65"><code>keepalive_timeout 65;</code></h3>
+<ul>
+<li><strong>Description</strong>: Sets the timeout for keeping a connection open after completing a request. In this case, it is set to <code>65</code> seconds. If the client doesn't send any data within this period, the connection is closed.</li>
+</ul>
+<hr />
+<h2 id="server-block">Server Block</h2>
+<p>The <code>server {}</code> block defines the behavior for a specific server or virtual host.</p>
+<h3 id="listen-8222"><code>listen 8222;</code></h3>
+<ul>
+<li><strong>Description</strong>: Instructs NGINX to listen for incoming requests on port <code>8222</code>. This is the port on which the server will accept connections.</li>
+</ul>
+<h3 id="server_name-localhost"><code>server_name localhost;</code></h3>
+<ul>
+<li><strong>Description</strong>: Defines the server name (or domain) for this block. In this case, it's set to <code>localhost</code>, meaning it will respond to requests sent to <code>localhost</code> or <code>127.0.0.1</code>.</li>
+</ul>
+<hr />
+<h2 id="location-block">Location Block</h2>
+<p>The <code>location {}</code> block defines how requests for specific URIs should be handled.</p>
+<h3 id="location"><code>location / {}</code></h3>
+<ul>
+<li><strong>Description</strong>: Defines how to handle requests to the root URL (<code>/</code>) of the server.</li>
+</ul>
+<h4 id="root-usrsharenginxhtml"><code>root /usr/share/nginx/html;</code></h4>
+<ul>
+<li><strong>Description</strong>: Specifies the root directory for this location. Files will be served from <code>/usr/share/nginx/html</code> when clients request URLs under <code>/</code>.</li>
+</ul>
+<h4 id="index-indexhtml-indexhtm"><code>index index.html index.htm;</code></h4>
+<ul>
+<li><strong>Description</strong>: Defines the default index files for this location. If a client requests the root URL (<code>/</code>), NGINX will first look for <code>index.html</code>, and if not found, it will look for <code>index.htm</code> to serve as the default file.</li>
+</ul>
+<hr />
+<h2 id="error-handling">Error Handling</h2>
+<h3 id="error_page-500-502-503-504-50xhtml"><code>error_page 500 502 503 504 /50x.html;</code></h3>
+<ul>
+<li><strong>Description</strong>: Specifies a custom error page to be served for specific HTTP errors (<code>500</code>, <code>502</code>, <code>503</code>, <code>504</code>). When these errors occur, NGINX will display the <code>50x.html</code> page.</li>
+</ul>
+<h3 id="location-50xhtml"><code>location = /50x.html {}</code></h3>
+<ul>
+<li><strong>Description</strong>: Defines how to serve the custom error page.</li>
+</ul>
+<h4 id="root-usrsharenginxhtml_1"><code>root /usr/share/nginx/html;</code></h4>
+<ul>
+<li><strong>Description</strong>: Specifies the location of the <code>50x.html</code> file. It will be served from the <code>/usr/share/nginx/html</code> directory.</li>
+</ul>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>This NGINX configuration sets up a basic web server with the following characteristics:
+- <strong>One worker process</strong> handling up to <strong>1024 concurrent connections</strong>.
+- <strong>HTTP server</strong> listening on port <code>8222</code>.
+- Serving static files from the <code>/usr/share/nginx/html</code> directory.
+- A default error page for common server errors (<code>500</code>, <code>502</code>, <code>503</code>, <code>504</code>).</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
