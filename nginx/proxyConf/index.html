@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>NGINX SSL and Proxy Configuration Explanation - ai-backend-docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">ai-backend-docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    General overview of the workings
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#howitworks-collapse" aria-expanded="false">
+                    howItWorks
+                </a>
+                <div class="collapse" id="howitworks-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/apigateway/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API gateway
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/code/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API Interaction Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/dockerCompose/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Docker Compose Setup for AudioStreamer Project
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/streaming/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/tts/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tts
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#nginx-collapse" aria-expanded="false">
+                    Nginx
+                </a>
+                <div class="collapse" id="nginx-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../nginxCode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Code for the nginx setup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nginxConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX SSL and Proxy Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../proxyParams/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proxy Header Configuration Explanation
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../nginxConf/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../proxyParams/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="nginx-ssl-and-proxy-configuration-explanation">NGINX SSL and Proxy Configuration Explanation</h1>
+<p>This NGINX configuration defines two server blocks: one for handling HTTPS requests and the other for redirecting HTTP requests to HTTPS. It also sets up reverse proxying to multiple backend services based on different URL paths.</p>
+<hr />
+<h2 id="first-server-block-https">First Server Block (HTTPS)</h2>
+<p>This block listens for secure HTTPS connections on port <code>443</code> using SSL/TLS.</p>
+<h3 id="listen-443-ssl-and-listen-443-ssl"><code>listen 443 ssl;</code> and <code>listen [::]:443 ssl;</code></h3>
+<ul>
+<li><strong>Description</strong>: This directive tells NGINX to listen for incoming connections on port <code>443</code> for both IPv4 and IPv6, using SSL for encryption.</li>
+</ul>
+<h3 id="server_name-your_ip"><code>server_name your_ip;</code></h3>
+<ul>
+<li><strong>Description</strong>: Specifies the server name (or IP address) that this server block will respond to. In this case, it listens for requests sent to the IP <code>your_ip</code>.</li>
+</ul>
+<h3 id="ssl-settings">SSL Settings</h3>
+<p>The following directives configure SSL/TLS for secure communication.</p>
+<h4 id="ssl_certificate-etcnginxsslservercertpem"><code>ssl_certificate /etc/nginx/ssl/servercert.pem;</code></h4>
+<ul>
+<li><strong>Description</strong>: Specifies the path to the SSL certificate file used to encrypt communication.</li>
+</ul>
+<h4 id="ssl_certificate_key-etcnginxsslserverkeypem"><code>ssl_certificate_key /etc/nginx/ssl/serverkey.pem;</code></h4>
+<ul>
+<li><strong>Description</strong>: Specifies the path to the private key file corresponding to the SSL certificate. This key is used to decrypt incoming encrypted connections.</li>
+</ul>
+<h4 id="ssl_protocols-tlsv12-tlsv13"><code>ssl_protocols TLSv1.2 TLSv1.3;</code></h4>
+<ul>
+<li><strong>Description</strong>: Defines the TLS protocols that are allowed. In this case, only TLS versions 1.2 and 1.3 are supported, which are considered secure.</li>
+</ul>
+<h4 id="ssl_ciphers-tls_aes_128_gcm_sha256tls_aes_256_gcm_sha384tls_ecdhe_rsa_with_aes_128_gcm_sha256"><code>ssl_ciphers 'TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256';</code></h4>
+<ul>
+<li><strong>Description</strong>: Defines the allowed cipher suites for SSL/TLS connections. The specified ciphers offer strong encryption while ensuring compatibility with modern clients.</li>
+</ul>
+<h3 id="proxy-configuration">Proxy Configuration</h3>
+<p>The following <code>location</code> blocks define how requests for different paths should be proxied to various backend services.</p>
+<h4 id="location"><code>location / {}</code></h4>
+<ul>
+<li>
+<p><strong>Description</strong>: For requests to the root path (<code>/</code>), this block proxies traffic to an internal service running on <code>localhost:{your_frontend_port}</code>.</p>
+</li>
+<li>
+<p><strong>proxy_pass https://localhost:{your_frontend_port};</strong>: Proxies the request to an HTTPS backend running on port <code>{your_frontend_port}</code>.</p>
+</li>
+<li><strong>include proxy_params;</strong>: Includes additional parameters for proxying, such as forwarding the original client IP and headers.</li>
+<li><strong>proxy_set_header Upgrade $http_upgrade;</strong> and <strong>proxy_set_header Connection 'upgrade';</strong>: These headers are necessary for handling WebSocket upgrades.</li>
+<li><strong>proxy_http_version 1.1;</strong>: Forces the use of HTTP/1.1 to support WebSocket connections.</li>
+</ul>
+<h4 id="location-api"><code>location /api/ {}</code></h4>
+<ul>
+<li><strong>Description</strong>: Proxies requests for paths starting with <code>/api/</code> to an internal service running on <code>localhost:{your_api_port}</code>.</li>
+<li><strong>proxy_pass http://localhost:{your_api_port}/;</strong>: Proxies HTTP traffic to the backend service.</li>
+</ul>
+<h4 id="location-ollama"><code>location /ollama/ {}</code></h4>
+<ul>
+<li><strong>Description</strong>: Proxies requests for paths starting with <code>/ollama/</code> to <code>localhost:11434</code>.</li>
+<li><strong>proxy_pass http://localhost:11434/;</strong>: Proxies HTTP traffic to the backend service.</li>
+</ul>
+<h4 id="location-streaming"><code>location /streaming/ {}</code></h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Proxies requests for paths starting with <code>/streaming/</code> to a service running on <code>localhost:{your_streaming_port}</code>.</p>
+</li>
+<li>
+<p><strong>proxy_set_header Upgrade $http_upgrade;</strong> and <strong>proxy_set_header Connection 'upgrade';</strong>: These headers are necessary for WebSocket connections.</p>
+</li>
+<li><strong>proxy_http_version 1.1;</strong>: Forces HTTP/1.1 for WebSocket support.</li>
+</ul>
+<h4 id="location-tts"><code>location /tts/ {}</code></h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Proxies requests for paths starting with <code>/tts/</code> to a service on <code>localhost:{your_tts_port}</code>.</p>
+</li>
+<li>
+<p><strong>proxy_pass http://localhost:{your_tts_port}/;</strong>: Proxies HTTP traffic to the backend service.</p>
+</li>
+</ul>
+<hr />
+<h2 id="second-server-block-http-to-https-redirect">Second Server Block (HTTP to HTTPS Redirect)</h2>
+<p>This server block handles HTTP requests and redirects them to HTTPS.</p>
+<h3 id="listen-80-and-listen-80"><code>listen 80;</code> and <code>listen [::]:80;</code></h3>
+<ul>
+<li><strong>Description</strong>: This tells NGINX to listen for incoming HTTP connections on port <code>80</code> (both IPv4 and IPv6).</li>
+</ul>
+<h3 id="server_name-your_ip_1"><code>server_name your_ip;</code></h3>
+<ul>
+<li><strong>Description</strong>: The server name for this block, matching the IP address <code>your_ip</code>.</li>
+</ul>
+<h3 id="http-to-https-redirect">HTTP to HTTPS Redirect</h3>
+<h4 id="return-301-httpshostrequest_uri"><code>return 301 https://$host$request_uri;</code></h4>
+<ul>
+<li><strong>Description</strong>: Redirects all incoming HTTP requests to HTTPS. The <code>301</code> status code indicates a permanent redirect.</li>
+<li><strong>$host</strong>: Preserves the original hostname from the request.</li>
+<li><strong>$request_uri</strong>: Includes the original requested URI (path and query string).</li>
+</ul>
+<p>This ensures that any HTTP request is automatically redirected to its HTTPS equivalent.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>This NGINX configuration handles:
+- <strong>HTTPS traffic</strong> (on port <code>443</code>) with SSL/TLS encryption, including the following reverse proxy setups:
+  - Root path (<code>/</code>) proxies to <code>localhost:{your_frontend_port}</code> (with WebSocket support).
+  - <code>/api/</code>, <code>/ollama/</code>, <code>/streaming/</code>, and <code>/tts/</code> paths proxy to their respective backend services.
+- <strong>HTTP traffic</strong> (on port <code>80</code>) is redirected to the HTTPS version of the same request, ensuring all traffic is secured.</p>
+<h3 id="ssl-and-proxy-highlights">SSL and Proxy Highlights:</h3>
+<ul>
+<li>SSL encryption is enabled using TLSv1.2 and TLSv1.3 protocols with strong cipher suites.</li>
+<li>Requests are proxied to various internal services based on the path, with WebSocket support enabled for certain paths (<code>/</code>, <code>/streaming/</code>).</li>
+</ul></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

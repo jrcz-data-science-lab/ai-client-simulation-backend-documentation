@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>API gateway - ai-backend-docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">ai-backend-docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    General overview of the workings
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#howitworks-collapse" aria-expanded="false">
+                    howItWorks
+                </a>
+                <div class="collapse" id="howitworks-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API gateway
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../code/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API Interaction Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dockerCompose/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Docker Compose Setup for AudioStreamer Project
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../streaming/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tts/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tts
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#nginx-collapse" aria-expanded="false">
+                    Nginx
+                </a>
+                <div class="collapse" id="nginx-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../nginx/nginxCode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Code for the nginx setup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../nginx/nginxConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../nginx/proxyConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX SSL and Proxy Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../nginx/proxyParams/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proxy Header Configuration Explanation
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../.."
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../code/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="api-gateway">API gateway</h1>
+<p>This FastAPI application allows users to interact with AI models through a variety of endpoints, including those for generating text prompts, managing models, caching conversation history, and handling real-time transcription through WebSockets. The application integrates with the Ollama service, which handles large language models (LLMs).</p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Conversation Caching</strong>: The application stores conversation history in a file for each user, allowing the model to generate more context-aware responses.</li>
+<li><strong>Model Management</strong>: Users can pull, delete, or create models in Ollama using dedicated API endpoints.</li>
+<li><strong>Real-time Transcription</strong>: Transcription functionality is available through WebSocket and HTTP endpoints, enabling audio data to be processed and transcribed in real time.</li>
+</ul>
+<h2 id="api-endpoints">API Endpoints</h2>
+<h3 id="1-health-check">1. Health Check</h3>
+<pre><code class="language-http">GET /
+</code></pre>
+<p><strong>Description</strong>: Verifies that the API is running.</p>
+<p><strong>Response</strong>:</p>
+<pre><code class="language-json">&quot;Apigateway is running&quot;
+</code></pre>
+<h3 id="2-generate-prompt">2. Generate Prompt</h3>
+<pre><code class="language-http">POST /api/prompt/
+</code></pre>
+<p><strong>Description</strong>: Generates a response from the AI model based on the provided text prompt.</p>
+<p><strong>Request Body</strong>:</p>
+<pre><code class="language-json">{
+    &quot;model&quot;: &quot;gemma2:2b&quot;,
+    &quot;text&quot;: &quot;What is the meaning of life?&quot;,
+    &quot;username&quot;: &quot;user123&quot;
+}
+</code></pre>
+<ul>
+<li><strong>model</strong>: The name of the AI model to use (e.g., <code>gemma2:2b</code>).</li>
+<li><strong>text</strong>: The input text for the AI model to generate a response.</li>
+<li><strong>username</strong>: A unique identifier for the user (used for caching conversation history).</li>
+</ul>
+<p><strong>Response</strong>:</p>
+<p>```json
+{
+    "model": "gemma2:2b",
+    "text": "The meaning of life is to seek happiness, purpose, and connection with others."
+}</p>
+<pre><code>
+**Functionality**:
+
+-   The model is invoked using the provided prompt.
+-   The AI's response is cached along with the prompt for future context-aware interactions.
+
+### 3\. Pull Model
+
+```http
+POST /api/pull/
+</code></pre>
+<p><strong>Description</strong>: Pulls a model from the Ollama service, making it available for use.</p>
+<p><strong>Request Body</strong>:</p>
+<pre><code class="language-json">{
+    &quot;model_name&quot;: &quot;llama3.1&quot;
+}
+</code></pre>
+<p><strong>Response</strong>:</p>
+<pre><code class="language-json">{
+    &quot;status&quot;: &quot;Model pulled successfully&quot;
+}
+</code></pre>
+<h3 id="4-delete-model">4. Delete Model</h3>
+<pre><code class="language-http">POST /api/delete/
+</code></pre>
+<p><strong>Description</strong>: Deletes a model from the Ollama service.</p>
+<p><strong>Request Body</strong>:</p>
+<pre><code class="language-json">{
+    &quot;model&quot;: &quot;llama3.1&quot;
+}
+</code></pre>
+<p><strong>Response</strong>:</p>
+<pre><code class="language-json">{
+    &quot;status&quot;: &quot;Model deleted successfully&quot;
+}
+</code></pre>
+<h3 id="5-create-custom-model">5. Create Custom Model</h3>
+<pre><code class="language-http">POST /api/create/
+</code></pre>
+<p><strong>Description</strong>: Creates a new custom model using a base model and personality traits.</p>
+<p><strong>Request Body</strong>:</p>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;custom-chat&quot;,
+    &quot;basemodel&quot;: &quot;gemma2:2b&quot;,
+    &quot;personality&quot;: &quot;Friendly and engaging&quot;
+}
+</code></pre>
+<p><strong>Response</strong>:</p>
+<pre><code class="language-json">{
+    &quot;status&quot;: &quot;Model created successfully&quot;
+}
+</code></pre>
+<h3 id="6-websocket-proxy-for-transcription">6. WebSocket Proxy for Transcription</h3>
+<pre><code class="language-http">WebSocket /proxy-transcribe
+</code></pre>
+<p><strong>Description</strong>: Establishes a WebSocket connection for real-time transcription of audio data. The audio is sent to a streaming service for processing, and the transcribed text is sent back to the client.</p>
+<p><strong>WebSocket Flow</strong>:</p>
+<ol>
+<li>The client connects to the WebSocket endpoint and sends audio data (along with the username) to the server.</li>
+<li>The server sends the audio data to an external streaming service for transcription.</li>
+<li>The transcribed text is sent back to the client.</li>
+</ol>
+<p><strong>Request</strong>:</p>
+<ul>
+<li>The client sends audio data to the server with a <code>username</code> key.</li>
+</ul>
+<pre><code class="language-json">{
+    &quot;username&quot;: &quot;user123&quot;,
+    &quot;audio&quot;: &quot;&lt;audio_base64&gt;&quot; // does not to be discribed
+}
+</code></pre>
+<p><strong>Response</strong>:</p>
+<pre><code class="language-json">{
+    &quot;username&quot;: &quot;user123&quot;,
+    &quot;transcription&quot;: &quot;Hello, this is a test transcription.&quot;
+}
+</code></pre>
+<h3 id="7-send-transcription-via-http">7. Send Transcription via HTTP</h3>
+<pre><code class="language-http">POST /proxy-send-transcription
+</code></pre>
+<p><strong>Description</strong>: Sends a transcription request to the streaming service, triggering transcription of audio for a specified user.</p>
+<p><strong>Request Body</strong>:</p>
+<pre><code class="language-json">{
+    &quot;username&quot;: &quot;user123&quot;
+}
+</code></pre>
+<p><strong>Response</strong>:</p>
+<pre><code class="language-json">{
+    &quot;status&quot;: &quot;Transcription sent successfully&quot;
+}
+</code></pre>
+<p><strong>Error Handling</strong>:</p>
+<ul>
+<li>If there's an issue with the request, the server responds with an error message.</li>
+</ul>
+<h3 id="8-get-audio">8. Get Audio</h3>
+<pre><code class="language-http">GET /audio/{username}
+</code></pre>
+<p><strong>Description</strong>: Fetches the audio file for a specific user from an external streaming service.</p>
+<p><strong>Response</strong>:</p>
+<ul>
+<li>The audio file is streamed as the response, with the correct <code>Content-Type</code> (default: <code>audio/wav</code>).</li>
+</ul>
+<hr />
+<h2 id="conversation-caching">Conversation Caching</h2>
+<p>The application uses a conversation cache to store and recall past interactions, improving the context for future requests. The cache is updated each time a new prompt is submitted, and the full conversation history is saved to a file for each user. This allows the AI to generate responses that account for previous interactions.</p>
+<h3 id="how-it-works">How It Works:</h3>
+<ul>
+<li>When a prompt is received, the AI generates a response using the conversation history.</li>
+<li>The conversation is then stored in a file specific to the user (<code>conversationMemory/{username}_memory.txt</code>).</li>
+<li>The conversation history is formatted and used as context in future requests, allowing the AI to provide more coherent and contextually aware answers.</li>
+</ul>
+<p><strong>Example of Conversation Cache Format</strong>:</p>
+<pre><code class="language-vbnet">User: What is the meaning of life?
+AI: The meaning of life is to seek happiness, purpose, and connection with others.
+
+User: Can you elaborate on happiness?
+AI: Happiness is often found in meaningful relationships, personal growth, and living with purpose.
+</code></pre>
+<h3 id="file-storage">File Storage:</h3>
+<ul>
+<li>The conversation is saved in a file named <code>conversationMemory/{username}_memory.txt</code> (where <code>{username}</code> is the unique identifier).</li>
+<li>The conversation cache is updated with each new user interaction.</li>
+</ul>
+<hr />
+<h2 id="model-invocation">Model Invocation</h2>
+<p>The AI models are invoked through the <code>Ollama</code> class, which interacts with the Ollama service. This service manages the large language models (LLMs) and allows the API to generate text based on the provided prompt.</p>
+<pre><code class="language-python">llm = Ollama(model=model_name, base_url=&quot;http://ollama:11434&quot;)
+</code></pre>
+<p>Each time a prompt is received, the entire conversation history (stored in <code>previous_convos</code>) is included as part of the prompt, enabling context-sensitive responses from the model.</p>
+<pre><code class="language-python">full_prompt = f'{previous_convos}\nUser: {prompt_text}\nAI:'
+return llm.invoke(&quot;Continue the conversation like a human\n&quot; + full_prompt)
+</code></pre>
+<hr />
+<h2 id="error-handling">Error Handling</h2>
+<p>The application uses standard HTTP error codes for failure scenarios:</p>
+<ul>
+<li><strong>400 Bad Request</strong>: The request is malformed or missing required fields.</li>
+<li><strong>500 Internal Server Error</strong>: There is a problem on the server, such as an issue with the Ollama service or external dependencies.</li>
+</ul>
+<p>Example of error response for an unsuccessful transcription request:</p>
+<pre><code class="language-json">{
+    &quot;error&quot;: &quot;HTTP error occurred&quot;,
+    &quot;details&quot;: &quot;Error details here&quot;
+}
+</code></pre>
+<h3 id="summary-of-available-endpoints">Summary of Available Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>Endpoint</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>GET</td>
+<td>Health check</td>
+</tr>
+<tr>
+<td><code>/api/prompt/</code></td>
+<td>POST</td>
+<td>Generate prompt response</td>
+</tr>
+<tr>
+<td><code>/api/pull/</code></td>
+<td>POST</td>
+<td>Pull a model from Ollama</td>
+</tr>
+<tr>
+<td><code>/api/delete/</code></td>
+<td>POST</td>
+<td>Delete a model from Ollama</td>
+</tr>
+<tr>
+<td><code>/api/create/</code></td>
+<td>POST</td>
+<td>Create a custom model</td>
+</tr>
+<tr>
+<td><code>/proxy-transcribe</code></td>
+<td>WebSocket</td>
+<td>Real-time audio transcription</td>
+</tr>
+<tr>
+<td><code>/proxy-send-transcription</code></td>
+<td>POST</td>
+<td>Send transcription request</td>
+</tr>
+<tr>
+<td><code>/audio/{username}</code></td>
+<td>GET</td>
+<td>Fetch user audio file</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>This API allows seamless interaction with the Ollama LLM service while handling user-specific conversation histories and supporting real-time transcription of audio data.</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

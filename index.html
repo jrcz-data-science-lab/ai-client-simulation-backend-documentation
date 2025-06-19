@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>ai-backend-docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="None">
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">ai-backend-docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="."
+                    class=" active 
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    General overview of the workings
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#howitworks-collapse" aria-expanded="false">
+                    howItWorks
+                </a>
+                <div class="collapse" id="howitworks-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="howItWorks/apigateway/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API gateway
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="howItWorks/code/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API Interaction Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="howItWorks/dockerCompose/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Docker Compose Setup for AudioStreamer Project
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="howItWorks/streaming/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="howItWorks/tts/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tts
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#nginx-collapse" aria-expanded="false">
+                    Nginx
+                </a>
+                <div class="collapse" id="nginx-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="nginx/nginxCode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Code for the nginx setup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="nginx/nginxConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="nginx/proxyConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX SSL and Proxy Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="nginx/proxyParams/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proxy Header Configuration Explanation
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="howItWorks/apigateway/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="general-overview-of-the-workings">General overview of the workings</h1>
+<pre><code>.
+├── backend
+│   ├── api
+│   ├── code
+│   ├── custom
+│   ├── data
+│   ├── docker-compose.yml
+│   ├── docs
+│   ├── .env
+│   ├── .env.example
+│   ├── streaming
+│   └── tts
+├── frontend
+│   ├── node_modules
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   ├── server.js
+│   └── ssl
+├── .gitignore
+└── readme.md
+</code></pre>
+<p>This project structure represents a multi-service application, organized into distinct components as follows:</p>
+<ul>
+<li><a href="howItWorks/apigateway/"><strong>api</strong></a>: Contains a Dockerfile, the main Python script (<code>main.py</code>), and a <code>requirements.txt</code> file listing dependencies for the API service.</li>
+<li><a href="howItWorks/code/"><strong>code</strong></a>: Another service similar to the API, with its own Dockerfile, main logic script (<code>main.py</code>), and <code>requirements.txt</code> for dependencies.</li>
+<li><strong>data</strong>: Stores data or models related to the Ollama service.</li>
+<li><a href="howItWorks/dockerCompose/"><strong>docker-compose.yml</strong></a>: Defines how these services interact using Docker Compose.</li>
+<li><a href="howItWorks/streaming/"><strong>streaming</strong></a>: A separate service like API and code, responsible for handling real-time data or streams.</li>
+<li><a href="howItWorks/tts/"><strong>text to speech</strong></a>: A service that deals with text to speech from the incoming text.</li>
+</ul>
+<h3 id="nginx-documentation">NGINX documentation</h3>
+<p>The NGINX reverse proxy is a key part of the architecture, acting as a traffic manager that directs incoming requests to the appropriate services based on the URL paths. It ensures secure communication, handles WebSocket connections for real-time features, and redirects HTTP traffic to HTTPS for enhanced security.</p>
+<ul>
+<li><a href="nginx/nginxCode/"><strong>NGINX code</strong></a></li>
+<li><a href="nginx/nginxConf/"><strong>NGINX configuration</strong></a></li>
+<li><a href="nginx/proxyParams/"><strong>NGINX proxy parameters</strong></a></li>
+<li><a href="nginx/proxyConf/"><strong>NGINX proxy configuration</strong></a></li>
+</ul>
+<h3 id="functionality">Functionality</h3>
+<p>The system facilitates real-time audio transcription through a WebSocket connection from the frontend. As the audio streams, it is transcribed in real-time. Once the user ends the stream, the inputs are concatenated and passed to the API gateway. </p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '.';</script>
+        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/mkdocs.js"></script>
+			<script src="search/main.js" defer></script>
+
+</body>
+
+</html>

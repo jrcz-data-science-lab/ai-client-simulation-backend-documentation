@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Proxy Header Configuration Explanation - ai-backend-docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">ai-backend-docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    General overview of the workings
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#howitworks-collapse" aria-expanded="false">
+                    howItWorks
+                </a>
+                <div class="collapse" id="howitworks-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/apigateway/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API gateway
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/code/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            API Interaction Script
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/dockerCompose/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Docker Compose Setup for AudioStreamer Project
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/streaming/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../howItWorks/tts/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tts
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#nginx-collapse" aria-expanded="false">
+                    Nginx
+                </a>
+                <div class="collapse" id="nginx-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../nginxCode/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Code for the nginx setup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nginxConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../proxyConf/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NGINX SSL and Proxy Configuration Explanation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proxy Header Configuration Explanation
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../proxyConf/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="proxy-header-configuration-explanation">Proxy Header Configuration Explanation</h1>
+<p>This section contains directives for setting HTTP headers in NGINX when acting as a reverse proxy. These headers are used to pass information about the client request and the original protocol used, ensuring that the upstream server can correctly interpret the request.</p>
+<hr />
+<h3 id="proxy_set_header-host-http_host"><code>proxy_set_header Host $http_host;</code></h3>
+<ul>
+<li><strong>Description</strong>: This directive sets the <code>Host</code> header in the request that is forwarded to the upstream server. </li>
+<li><strong>$http_host</strong>: This variable represents the original <code>Host</code> header sent by the client in the HTTP request.</li>
+<li><strong>Purpose</strong>: Ensures that the upstream server sees the original <code>Host</code> header, allowing it to properly respond based on the requested domain or subdomain.</li>
+</ul>
+<h3 id="proxy_set_header-x-real-ip-remote_addr"><code>proxy_set_header X-Real-IP $remote_addr;</code></h3>
+<ul>
+<li><strong>Description</strong>: This directive forwards the client's original IP address to the upstream server by setting the <code>X-Real-IP</code> header.</li>
+<li><strong>$remote_addr</strong>: This variable contains the IP address of the client making the request.</li>
+<li><strong>Purpose</strong>: Passes the client's real IP address to the upstream server, which may be useful for logging, analytics, or security purposes, especially when NGINX is behind a load balancer or proxy.</li>
+</ul>
+<h3 id="proxy_set_header-x-forwarded-for-proxy_add_x_forwarded_for"><code>proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</code></h3>
+<ul>
+<li><strong>Description</strong>: This directive sets the <code>X-Forwarded-For</code> header, which is a comma-separated list of IP addresses representing the chain of proxies that forwarded the request.</li>
+<li><strong>$proxy_add_x_forwarded_for</strong>: This variable appends the client's IP address (<code>$remote_addr</code>) to the existing <code>X-Forwarded-For</code> header, or creates it if it does not exist.</li>
+<li><strong>Purpose</strong>: Allows the upstream server to trace the entire path of the client request, especially when there are multiple proxies involved. This is crucial for logging the real client IP in multi-layered proxy setups.</li>
+</ul>
+<h3 id="proxy_set_header-x-forwarded-proto-scheme"><code>proxy_set_header X-Forwarded-Proto $scheme;</code></h3>
+<ul>
+<li><strong>Description</strong>: This directive sets the <code>X-Forwarded-Proto</code> header, which indicates the protocol (HTTP or HTTPS) that was used by the client to connect to the original NGINX server.</li>
+<li><strong>$scheme</strong>: This variable represents the protocol used in the original request, either <code>http</code> or <code>https</code>.</li>
+<li><strong>Purpose</strong>: Communicates to the upstream server whether the original client connection was secured (HTTPS) or not (HTTP). This is useful for generating correct links or handling mixed-content issues.</li>
+</ul>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>These <code>proxy_set_header</code> directives are used in reverse proxy configurations to pass relevant client information from the NGINX proxy to the upstream server. The headers help the upstream server correctly handle:
+- The <strong>requested domain</strong> (<code>Host</code> header),
+- The <strong>real client IP address</strong> (<code>X-Real-IP</code>, <code>X-Forwarded-For</code>),
+- And the <strong>protocol used</strong> (<code>X-Forwarded-Proto</code>).</p>
+<p>This setup ensures that the upstream server has all the necessary context to handle requests properly in a proxy or load-balanced environment.</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
